@@ -852,7 +852,7 @@ a:focus {
     margin: 45px 0;
     display: flex;
     align-items: center;
-    background: #202C45;
+    background: #161616;
 }
 
 .facts .facts-item {
@@ -864,7 +864,7 @@ a:focus {
 .facts .facts-item i {
     margin-top: 15px;
     font-size: 45px;
-    color: #E81C2E;
+    color: #ffd234;
 }
 
 .facts .facts-text {
@@ -960,7 +960,7 @@ a:focus {
 
 .price .price-item.featured-item h2,
 .price .price-item.featured-item h3 {
-    color: #E81C2E;
+    color: #ffd234;
 }
 
 .price .price-body {
@@ -982,11 +982,11 @@ a:focus {
 }
 
 .price .price-body ul li i.fa-check-circle {
-    color: #39B972;
+    color: #161616;
 }
 
 .price .price-body ul li i.fa-times-circle {
-    color: #cccccc;
+    color: #ffd234;
 }
 
 .price .price-item .price-footer {
