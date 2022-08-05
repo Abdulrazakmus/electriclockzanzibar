@@ -1,6 +1,44 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffd234;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #222222;
+    --gray-dark: #343a40;
+    --primary: #e3620f;
+    --secondary: #e3620f;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f1f3ff;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+
+
+
+
 body {
     color: #444444;
     font-weight: 400;
@@ -9,17 +47,25 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
-    color: #202C45;
+    color: --gray;
 }
 
 a {
     color: #202C45;
-    transition: .3s;
+    transition: .1s;
+}
+.logo{
+
+    width: 100%;
+    length:100%;
+}
+p{
+    text-align:justify-content;
 }
 
 a:hover,
@@ -32,7 +78,7 @@ a:focus {
 
 .btn.btn-custom {
     padding: 10px 30px 12px 30px;
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -60,16 +106,23 @@ a:focus {
     max-width: 1366px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
     font-size: inherit;
     margin-left: 0;
 }
 
 
 /**********************************/
+
+
 /****** Loader & Back to Top ******/
+
+
 /**********************************/
+
 #loader {
     position: fixed;
     top: 0;
@@ -108,13 +161,21 @@ a:focus {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {
@@ -141,11 +202,21 @@ a:focus {
 .back-to-top:hover {
     background: #202C45;
 }
-
+/* ==================================services======================== */
+.serv{
+    text-align:left;
+    Color: #161616;
+}
+/* ==================================================================== */
 
 /**********************************/
+
+
 /********** Top Bar CSS ***********/
+
+
 /**********************************/
+
 .top-bar {
     position: relative;
     height: 75px;
@@ -161,7 +232,7 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: -4px 0 0 0;
-    color: #E81C2E;
+    color: #ffd234;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -170,7 +241,7 @@ a:focus {
 }
 
 .top-bar .logo h1 span {
-    color: #202C45;
+    color: #222222;
 }
 
 .top-bar .logo img {
@@ -190,7 +261,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #202C45;
+    background: #ffd234;
     border-radius: 40px;
 }
 
@@ -224,11 +295,16 @@ a:focus {
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
+
 .nav-bar {
     position: relative;
-    background: #202C45;
+    background: #222222;
 }
 
 .nav-bar.nav-sticky {
@@ -242,7 +318,7 @@ a:focus {
 
 .nav-bar .navbar {
     padding: 20px 0;
-    background: #202C45 !important;
+    background: #222222 !important;
     transition: .3s;
 }
 
@@ -273,13 +349,13 @@ a:focus {
 }
 
 .nav-bar .btn.btn-custom {
-    color: #202C45;
+    color: #222222;
     background: #ffffff;
     box-shadow: inset 0 0 0 0 #E81C2E;
 }
 
 .nav-bar .btn:hover {
-    color: #ffffff;
+    color: #222222;
     background: #E81C2E;
     box-shadow: inset 200px 0 0 0 #E81C2E;
 }
@@ -297,11 +373,9 @@ a:focus {
     .navbar-dark .navbar-nav .nav-link.active {
         padding: 5px 0;
     }
-    
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
     .nav-bar .btn {
         display: none;
     }
@@ -309,11 +383,17 @@ a:focus {
 
 
 /*******************************/
+
+
 /********** Hero CSS ***********/
+
+
 /*******************************/
+
 .carousel {
     position: relative;
     width: 100%;
+    length:100%;
     min-height: 400px;
     background: #ffffff;
     margin-bottom: 45px;
@@ -326,7 +406,7 @@ a:focus {
 .carousel .carousel-item {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,16 +452,16 @@ a:focus {
 }
 
 .carousel .carousel-text h3 {
-    color: #E81C2E;
-    font-size: 20px;
-    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 1000;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
 
 .carousel .carousel-text h1 {
-    color: #ffffff;
+    color: #ffd234;
     font-size: 90px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -391,8 +471,8 @@ a:focus {
 .carousel .carousel-text p {
     max-width: 500px;
     color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 45px;
 }
 
 .carousel .btn.btn-custom {
@@ -452,15 +532,12 @@ a:focus {
     .carousel .carousel-text h3 {
         margin-bottom: 5px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 60px;
     }
-    
     .carousel .carousel-text p {
         font-size: 16px;
     }
-    
     .carousel .carousel-text .btn {
         padding: 12px 30px;
         font-size: 15px;
@@ -474,11 +551,9 @@ a:focus {
         letter-spacing: 2px;
         margin-bottom: 15px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 45px;
     }
-    
     .carousel .carousel-text .btn {
         padding: 10px 25px;
         font-size: 15px;
@@ -492,16 +567,13 @@ a:focus {
         letter-spacing: 1px;
         margin-bottom: 10px;
     }
-    
     .carousel .carousel-text h1 {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    
     .carousel .carousel-text p {
         margin-bottom: 25px;
     }
-    
     .carousel .carousel-text .btn {
         padding: 8px 20px;
         font-size: 14px;
@@ -511,8 +583,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******* Page Header CSS *******/
+
+
 /*******************************/
+
 .page-header {
     position: relative;
     margin-bottom: 45px;
@@ -571,11 +648,9 @@ a:focus {
     .page-header {
         padding: 60px 0;
     }
-    
     .page-header h2 {
         font-size: 45px;
     }
-    
     .page-header a {
         font-size: 20px;
     }
@@ -585,11 +660,9 @@ a:focus {
     .page-header {
         padding: 45px 0;
     }
-    
     .page-header h2 {
         font-size: 35px;
     }
-    
     .page-header a {
         font-size: 18px;
     }
@@ -597,8 +670,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******* Section Header ********/
+
+
 /*******************************/
+
 .section-header {
     position: relative;
     width: 100%;
@@ -663,8 +741,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********** About CSS **********/
+
+
 /*******************************/
+
 .about {
     position: relative;
     width: 100%;
@@ -704,8 +787,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********* Service CSS *********/
+
+
 /*******************************/
+
 .service {
     position: relative;
     width: 100%;
@@ -750,8 +838,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********** Facts CSS **********/
+
+
 /*******************************/
+
 .facts {
     position: relative;
     width: 100%;
@@ -806,8 +899,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********* Pricing CSS *********/
+
+
 /*******************************/
+
 .price {
     position: relative;
     width: 100%;
@@ -921,8 +1019,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******** Location CSS *********/
+
+
 /*******************************/
+
 .location {
     position: relative;
     width: 100%;
@@ -1020,8 +1123,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /*********** Team CSS **********/
+
+
 /*******************************/
+
 .team {
     position: relative;
     width: 100%;
@@ -1109,8 +1217,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******* Testimonial CSS *******/
+
+
 /*******************************/
+
 .testimonial {
     position: relative;
     width: 100%;
@@ -1195,8 +1308,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /*********** Blog CSS **********/
+
+
 /*******************************/
+
 .blog {
     position: relative;
     width: 100%;
@@ -1330,8 +1448,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********* Contact CSS *********/
+
+
 /*******************************/
+
 .contact {
     position: relative;
     width: 100%;
@@ -1344,7 +1467,6 @@ a:focus {
     padding: 35px 30px 10px 30px;
     border-radius: 5px;
     background: #202C45;
-    
 }
 
 .contact .contact-info h2 {
@@ -1429,8 +1551,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******* Single Post CSS *******/
+
+
 /*******************************/
+
 .single {
     position: relative;
     padding: 45px 0;
@@ -1740,8 +1867,13 @@ a:focus {
 
 
 /**********************************/
+
+
 /*********** Sidebar CSS **********/
+
+
 /**********************************/
+
 .sidebar {
     position: relative;
     width: 100%;
@@ -1854,11 +1986,11 @@ a:focus {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -1922,8 +2054,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********* Footer CSS **********/
+
+
 /*******************************/
+
 .footer {
     position: relative;
     margin-top: 45px;
